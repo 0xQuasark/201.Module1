@@ -115,7 +115,7 @@ function lab03() {
 }
 
 
-// lab02()
+lab02()
 lab03()
 
 
