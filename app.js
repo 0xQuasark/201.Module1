@@ -23,7 +23,7 @@ function lab02() {
     let newResponse = prompt(questions[i]).toLowerCase();
 
     while (newResponse !== 'y' && newResponse !== 'n' && newResponse !== 'yes' && newResponse !=='no') {
-      console.log(newResponse);
+      // console.log(newResponse);
       alert("Incorrect response, please try again. Answer y/n.")
       newResponse = prompt(questions[i]).toLowerCase();
     }
@@ -49,7 +49,7 @@ function lab03() {
   let userAnswer = '';
   let hint = '';
 
-  console.log(randomNumber)
+  console.log('Shh, don\'t tell anyone, but this is my secret number: ' + randomNumber);
 
   // This is the number guessing game
   do {
