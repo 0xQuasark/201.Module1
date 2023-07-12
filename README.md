@@ -2,7 +2,7 @@
 
 ## 201's 1st Module Labwork
 
-Herewith the Lighthouse Score:
+Herewith the Lighthouse Score (update July 12th):
 
 ![Lighthouse Score](image-1.png)
 
