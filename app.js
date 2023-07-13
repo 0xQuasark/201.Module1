@@ -95,23 +95,27 @@ function lab03() {
 
   alert('The list of cryptos include: ' + cryptos)
 
-  let scoreDetails = '<strong>YOUR SCORES</strong><br>';
-  scoreDetails += '<u>Number Guessing Game</u><br>';
-  if (correctNumberAnswer) {
-    scoreDetails += 'You guessed the number in ' + numNumberGuesses + ' attempts.\n';
-  } else {
-    scoreDetails += 'You never guessed the number (it was ' + randomNumber + ').\n';
+  function scoreBuilder(correctNumberAnswer, numNumberGuesses, randomNumber, correctTriviaAnswer, numTriviaGuesses){
+
+    let scoreDetails = '<strong>YOUR SCORES</strong><br>';
+    scoreDetails += '<u>Number Guessing Game</u><br>';
+    if (correctNumberAnswer) {
+      scoreDetails += 'You guessed the number in ' + numNumberGuesses + ' attempts.\n';
+    } else {
+      scoreDetails += 'You never guessed the number (it was ' + randomNumber + ').\n';
+    }
+  
+    scoreDetails += '<br><br><u>Triva Game</u><br>';
+    if (correctTriviaAnswer) {
+      scoreDetails += 'You answered a cryptocurrency in ' + numTriviaGuesses + ' attempts.\n';
+    } else {
+      scoreDetails += 'You never guessed a correct cryptocurrency :(\n';
+    }  
+    return scoreDetails; 
   }
+  let scoreTally = scoreBuilder(correctNumberAnswer, numNumberGuesses, randomNumber, correctTriviaAnswer, numTriviaGuesses);
 
-  scoreDetails += '<br><br><u>Triva Game</u><br>';
-  if (correctTriviaAnswer) {
-    scoreDetails += 'You answered a cryptocurrency in ' + numTriviaGuesses + ' attempts.\n';
-  } else {
-    scoreDetails += 'You never guessed a correct cryptocurrency :(\n';
-  }
-
-
-  document.getElementById("variable-value").innerHTML = scoreDetails;
+  document.getElementById("variable-value").innerHTML = scoreTally;
 }
 
 
