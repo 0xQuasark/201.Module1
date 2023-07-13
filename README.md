@@ -17,3 +17,7 @@ Herewith the Lighthouse Score (update July 12th):
   - user has 6 attempts to guess the correct answer
   - when the user uses all guess, or gets an answer correct, all the other correct answers will be displayed
   - a score is kept track of and displayed
+
+
+  - Driver: Anthony Cunningham made the following changes (see commit on pull request)
+  -Navigator: Paul Brown, orchestrated direction of change
